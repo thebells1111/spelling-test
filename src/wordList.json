@@ -1,0 +1,404 @@
+[
+  {
+    "word": "a",
+    "sentences": [
+      "There is _ cat in the tree.",
+      "We saw _ bear in the woods."
+    ]
+  },
+  {
+    "word": "about",
+    "sentences": []
+  },
+  {
+    "word": "all",
+    "sentences": []
+  },
+  {
+    "word": "also",
+    "sentences": []
+  },
+  {
+    "word": "and",
+    "sentences": []
+  },
+  {
+    "word": "as",
+    "sentences": []
+  },
+  {
+    "word": "at",
+    "sentences": []
+  },
+  {
+    "word": "be",
+    "sentences": []
+  },
+  {
+    "word": "because",
+    "sentences": []
+  },
+  {
+    "word": "but",
+    "sentences": []
+  },
+  {
+    "word": "by",
+    "sentences": []
+  },
+  {
+    "word": "can",
+    "sentences": []
+  },
+  {
+    "word": "come",
+    "sentences": []
+  },
+  {
+    "word": "could",
+    "sentences": []
+  },
+  {
+    "word": "day",
+    "sentences": []
+  },
+  {
+    "word": "do",
+    "sentences": []
+  },
+  {
+    "word": "even",
+    "sentences": []
+  },
+  {
+    "word": "find",
+    "sentences": []
+  },
+  {
+    "word": "first",
+    "sentences": []
+  },
+  {
+    "word": "for",
+    "sentences": []
+  },
+  {
+    "word": "from",
+    "sentences": []
+  },
+  {
+    "word": "get",
+    "sentences": []
+  },
+  {
+    "word": "give",
+    "sentences": []
+  },
+  {
+    "word": "go",
+    "sentences": []
+  },
+  {
+    "word": "have",
+    "sentences": []
+  },
+  {
+    "word": "he",
+    "sentences": []
+  },
+  {
+    "word": "her",
+    "sentences": []
+  },
+  {
+    "word": "here",
+    "sentences": []
+  },
+  {
+    "word": "him",
+    "sentences": []
+  },
+  {
+    "word": "his",
+    "sentences": []
+  },
+  {
+    "word": "how",
+    "sentences": []
+  },
+  {
+    "word": "I",
+    "sentences": []
+  },
+  {
+    "word": "if",
+    "sentences": []
+  },
+  {
+    "word": "in",
+    "sentences": []
+  },
+  {
+    "word": "into",
+    "sentences": []
+  },
+  {
+    "word": "it",
+    "sentences": []
+  },
+  {
+    "word": "its",
+    "sentences": []
+  },
+  {
+    "word": "just",
+    "sentences": []
+  },
+  {
+    "word": "know",
+    "sentences": []
+  },
+  {
+    "word": "like",
+    "sentences": []
+  },
+  {
+    "word": "look",
+    "sentences": []
+  },
+  {
+    "word": "make",
+    "sentences": []
+  },
+  {
+    "word": "man",
+    "sentences": []
+  },
+  {
+    "word": "many",
+    "sentences": []
+  },
+  {
+    "word": "me",
+    "sentences": []
+  },
+  {
+    "word": "more",
+    "sentences": []
+  },
+  {
+    "word": "my",
+    "sentences": []
+  },
+  {
+    "word": "new",
+    "sentences": []
+  },
+  {
+    "word": "no",
+    "sentences": []
+  },
+  {
+    "word": "not",
+    "sentences": []
+  },
+  {
+    "word": "now",
+    "sentences": []
+  },
+  {
+    "word": "of",
+    "sentences": []
+  },
+  {
+    "word": "on",
+    "sentences": []
+  },
+  {
+    "word": "one",
+    "sentences": []
+  },
+  {
+    "word": "only",
+    "sentences": []
+  },
+  {
+    "word": "or",
+    "sentences": []
+  },
+  {
+    "word": "other",
+    "sentences": []
+  },
+  {
+    "word": "our",
+    "sentences": []
+  },
+  {
+    "word": "out",
+    "sentences": []
+  },
+  {
+    "word": "people",
+    "sentences": []
+  },
+  {
+    "word": "say",
+    "sentences": []
+  },
+  {
+    "word": "see",
+    "sentences": []
+  },
+  {
+    "word": "she",
+    "sentences": []
+  },
+  {
+    "word": "so",
+    "sentences": []
+  },
+  {
+    "word": "some",
+    "sentences": []
+  },
+  {
+    "word": "take",
+    "sentences": []
+  },
+  {
+    "word": "tell",
+    "sentences": []
+  },
+  {
+    "word": "than",
+    "sentences": []
+  },
+  {
+    "word": "that",
+    "sentences": []
+  },
+  {
+    "word": "the",
+    "sentences": []
+  },
+  {
+    "word": "their",
+    "sentences": []
+  },
+  {
+    "word": "them",
+    "sentences": []
+  },
+  {
+    "word": "then",
+    "sentences": []
+  },
+  {
+    "word": "there",
+    "sentences": []
+  },
+  {
+    "word": "these",
+    "sentences": []
+  },
+  {
+    "word": "they",
+    "sentences": []
+  },
+  {
+    "word": "thing",
+    "sentences": []
+  },
+  {
+    "word": "think",
+    "sentences": []
+  },
+  {
+    "word": "this",
+    "sentences": []
+  },
+  {
+    "word": "those",
+    "sentences": []
+  },
+  {
+    "word": "time",
+    "sentences": []
+  },
+  {
+    "word": "to",
+    "sentences": []
+  },
+  {
+    "word": "two",
+    "sentences": []
+  },
+  {
+    "word": "up",
+    "sentences": []
+  },
+  {
+    "word": "use",
+    "sentences": []
+  },
+  {
+    "word": "very",
+    "sentences": []
+  },
+  {
+    "word": "want",
+    "sentences": []
+  },
+  {
+    "word": "way",
+    "sentences": []
+  },
+  {
+    "word": "we",
+    "sentences": []
+  },
+  {
+    "word": "well",
+    "sentences": []
+  },
+  {
+    "word": "what",
+    "sentences": []
+  },
+  {
+    "word": "when",
+    "sentences": []
+  },
+  {
+    "word": "which",
+    "sentences": []
+  },
+  {
+    "word": "who",
+    "sentences": []
+  },
+  {
+    "word": "will",
+    "sentences": []
+  },
+  {
+    "word": "with",
+    "sentences": []
+  },
+  {
+    "word": "would",
+    "sentences": []
+  },
+  {
+    "word": "year",
+    "sentences": []
+  },
+  {
+    "word": "you",
+    "sentences": []
+  },
+  {
+    "word": "your"
+  }
+]
