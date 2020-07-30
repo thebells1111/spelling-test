@@ -66,7 +66,15 @@
         document.activeElement === $spellingWordInput &&
         $spellingWordStatus !== "correct"
       ) {
-        checkSpelling();
+        if ($spellingWordStatus === "incorrect") {
+          $spellingWordStatus="";
+          $spellingAttempt="";
+          $msg.text = $currentWord;
+          speechSynthesis.speak($msg);
+        } else{
+         checkSpelling();
+        }
+
       } else if ($spellingWordStatus === "correct" || $attempts > 4) {
         selectNextWord();
       }
@@ -82,11 +90,14 @@
 
 <style>
   main {
-    max-width: 750px;
-    max-height: 900px;
+    max-width: 450px;
+    max-height: 600px;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
   }
 </style>
 
