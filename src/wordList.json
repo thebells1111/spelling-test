@@ -3,12 +3,21 @@
     "word": "a",
     "sentences": [
       "There is _ cat in the tree.",
-      "We saw _ bear in the woods."
+      "We saw _ bear in the woods.",
+      "I am eating _ cookie.",
+      "Let's go fly _ kite.",
+      "We are watching _ movie."
     ]
   },
   {
     "word": "about",
-    "sentences": []
+    "sentences": [
+      "We are ___ to go to the store.",
+      "I was thinking ___ the book.",
+      "What are you talking ___?",
+      "This song is ___ a rainbow.",
+      "The movie was ___ a pig."
+    ]
   },
   {
     "word": "all",

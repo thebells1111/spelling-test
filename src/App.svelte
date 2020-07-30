@@ -62,19 +62,13 @@
     ) {
       $spellingWordInput.focus();
     } else if (keycode === 13) {
-      if (
-        document.activeElement === $spellingWordInput &&
-        $spellingWordStatus !== "correct"
-      ) {
-        if ($spellingWordStatus === "incorrect") {
-          $spellingWordStatus="";
-          $spellingAttempt="";
-          $msg.text = $currentWord;
-          speechSynthesis.speak($msg);
-        } else{
-         checkSpelling();
-        }
-
+      if ($spellingWordInput && !$spellingWordStatus) {
+        checkSpelling();
+      } else if ($spellingWordStatus === "incorrect") {
+        $spellingWordStatus = "";
+        $spellingAttempt = "";
+        $msg.text = $currentWord;
+        speechSynthesis.speak($msg);
       } else if ($spellingWordStatus === "correct" || $attempts > 4) {
         selectNextWord();
       }
@@ -98,6 +92,7 @@
     border-radius: 10px;
     position: relative;
     background-color: whitesmoke;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 </style>
 
@@ -109,5 +104,4 @@
   {:else}
     <SpellingTest />
   {/if}
-
 </main>

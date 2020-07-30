@@ -41,6 +41,7 @@ export function hearCorrectWord() {
 export function checkSpelling() {
   if ($spellingAttempt === $currentWord) {
     spellingWordStatus.set("correct");
+    selectNextWord();
   } else {
     spellingWordStatus.set("incorrect");
     attempts.update((n) => n + 1);
