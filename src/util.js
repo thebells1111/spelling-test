@@ -10,6 +10,7 @@ import {
   msg,
   voices,
   currentWord,
+  starCount,
 } from "./store.js";
 
 let $spellingWordStatus;
@@ -17,6 +18,7 @@ let $attempts;
 let $msg;
 let $spellingAttempt;
 let $currentWord;
+let $starCount;
 
 msg.subscribe((value) => ($msg = value));
 spellingAttempt.subscribe((value) => ($spellingAttempt = value));
@@ -25,26 +27,32 @@ spellingAttempt.subscribe((value) => ($spellingAttempt = value));
 attempts.subscribe((value) => ($attempts = value));
 spellingWordStatus.subscribe((value) => ($spellingWordStatus = value));
 currentWord.subscribe((value) => ($currentWord = value));
+starCount.subscribe((value) => ($starCount = value));
 
 export function hearIncorrectWord() {
   $msg.text = $spellingAttempt;
   speechSynthesis.speak($msg);
-  console.log("incorrect");
 }
 
 export function hearCorrectWord() {
   $msg.text = $currentWord;
   speechSynthesis.speak($msg);
-  console.log("correct");
 }
 
 export function checkSpelling() {
-  if ($spellingAttempt === $currentWord) {
-    spellingWordStatus.set("correct");
-    selectNextWord();
-  } else {
-    spellingWordStatus.set("incorrect");
-    attempts.update((n) => n + 1);
+  if ($spellingAttempt) {
+    if ($spellingAttempt === $currentWord) {
+      starCount.update((v) => {
+        console.log($attempts);
+        v[$attempts]++;
+        return v;
+      });
+      spellingWordStatus.set("correct");
+      selectNextWord();
+    } else {
+      spellingWordStatus.set("incorrect");
+      attempts.update((n) => n + 1);
+    }
   }
 }
 

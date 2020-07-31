@@ -6,6 +6,7 @@
     spellingAttempt,
     index,
     attempts,
+    maxAttempts,
     spellingWordStatus,
     spellingWordInput,
     wordList,
@@ -69,7 +70,10 @@
         $spellingAttempt = "";
         $msg.text = $currentWord;
         speechSynthesis.speak($msg);
-      } else if ($spellingWordStatus === "correct" || $attempts > 4) {
+      } else if (
+        $spellingWordStatus === "correct" ||
+        $attempts > $maxAttempts
+      ) {
         selectNextWord();
       }
     } else if (keycode === 32) {
@@ -99,7 +103,7 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <main>
-  {#if $attempts > 4}
+  {#if $attempts > $maxAttempts}
     <Practice />
   {:else}
     <SpellingTest />

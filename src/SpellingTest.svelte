@@ -1,4 +1,6 @@
 <script>
+  import Star from "./Star.svelte";
+
   import {
     spellingAttempt,
     index,
@@ -6,6 +8,7 @@
     spellingWordStatus,
     spellingWordInput,
     wordList,
+    starCount,
   } from "./store.js";
 
   import {
@@ -23,6 +26,7 @@
     } else if ($spellingWordStatus === "incorrect") {
       $spellingWordStatus = "";
       $spellingAttempt = "";
+      hearCorrectWord();
     } else {
       checkSpelling();
     }
@@ -37,6 +41,7 @@
     background-color: #073b4c;
     color: whitesmoke;
     border: none;
+    cursor: pointer;
   }
 
   button:first-of-type {
@@ -66,14 +71,21 @@
 
   input {
     font-size: 3em;
-    caret-color: transparent;
-    width: 70%;
+    width: 80%;
     border: none;
+    outline: none;
     box-sizing: border-box;
     position: relative;
     top: 25%;
     text-align: center;
     background-color: whitesmoke;
+  }
+
+  s-instructions {
+    display: inline-block;
+    font-size: 2em;
+    position: relative;
+    bottom: 1em;
   }
 
   ::placeholder {
@@ -88,20 +100,42 @@
     border-radius: 3px;
     background-color: transparent;
   }
+
+  s-awards {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 1em;
+  }
 </style>
 
 <button on:click={hearCorrectWord}>Hear Spelling Word</button>
 
-<div>
+<div on:mousedown|preventDefault={() => $spellingWordInput.focus()}>
   <input
     bind:value={$spellingAttempt}
     bind:this={$spellingWordInput}
-    placeholder="Type word then press enter" />
+    readonly={$spellingWordStatus === 'incorrect'} />
+  {#if !$spellingAttempt}
+    <s-instructions>Type word then press enter</s-instructions>
+  {/if}
   {#if $spellingWordStatus === 'incorrect'}
     <button class="hear-incorrect-word" on:click={hearIncorrectWord}>
       <EarIcon size="2em" />
     </button>
   {/if}
+  <s-awards>
+    <span>
+      <Star />
+      {$starCount[0]}
+    </span>
+    <span>
+      <Star color="silver" />
+      {$starCount[1]}
+    </span>
+    <Star color="bronze" />
+    {$starCount[2]}
+  </s-awards>
 </div>
 <button
   on:click={handleButtonClick}
